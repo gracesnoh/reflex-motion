@@ -1,0 +1,23 @@
+{
+  "name": "reflex-motion",
+  "version": "1.0.0",
+  "description": "Simple, elegant animations library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gracesnoh/reflex-motion.git"
+  },
+  "keywords": [
+    "Animation",
+    "Reflex"
+  ],
+  "author": "Reflex Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gracesnoh/reflex-motion/issues"
+  },
+  "homepage": "https://github.com/gracesnoh/reflex-motion#readme"
+}
