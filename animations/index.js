@@ -8,6 +8,7 @@ import PlayPauseDemo from './demos/PlayPauseDemo';
 import HamburgerDemo from './demos/HamburgerDemo';
 import TabSwitchDemo from './demos/TabSwitchDemo';
 import LoadingLinesDemo from './demos/LoadingLinesDemo';
+import Toggle from './Toggle';
 
 export default [
   HamburgerDemo,
@@ -18,6 +19,7 @@ export default [
   NotificationBellDemo,
   CheckboxDemo,
   StarburstDemo,
+  Toggle,
   // TabSwitchDemo,
   LoadingLinesDemo
 ];
