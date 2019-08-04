@@ -73,7 +73,7 @@ class Toggle extends PureComponent {
 
 
   render() {
-    return <Button onClick={this.handleOnClick} ref={this.toggleRef} size={this.props.size} />;
+    return (<Button onClick={this.handleOnClick} ref={this.toggleRef} size={this.props.size} />);
   }
 }
 
