@@ -1,5 +1,68 @@
 {
   "name": "@gracesnoh/reflex-motion-test",
-  "version": "1.0.2",
-  "repository": "gracesnoh/reflex-motion-test"
+  "description": "Reflex Motion is a set of animated React web components that incorporate natural and fluid motion.",
+  "main": "index.js",
+  "license": "MIT",
+  "version": "1.0.3",
+  "repository": "gracesnoh/reflex-motion-test",
+  "engines": {
+    "node": "8.6.0"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.8.0",
+    "lottie-web": "^5.5.4",
+    "node-sass-chokidar": "^1.2.2",
+    "npm-run-all": "^4.1.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^3.0.1",
+    "react-scroll": "^1.7.11",
+    "react-scrolling-color-background": "^1.0.2",
+    "react-spring": "^8.0.20",
+    "react-visibility-sensor": "5.1.0",
+    "styled-components": "^4.0.3"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-styled-components": "^1.10.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "prettier": "^1.14.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
